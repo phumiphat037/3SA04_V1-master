@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
         paddingLeft: 300,
     },
     box2: {
-        backgroundColor: '#000',
+        backgroundColor: 'orange',
         width: '100%',
         height: '1%',
         opacity: 0.5,
