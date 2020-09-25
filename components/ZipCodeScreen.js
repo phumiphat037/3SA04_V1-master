@@ -24,6 +24,7 @@ const ZipItem =  ({ place, code, navigation }) => (
         <View style={styles.box2}></View>
            <Text style={styles.big}>{place}</Text>
            <Text style={styles.small}>{code}</Text>
+           <View style={styles.box2}></View>
         </View>
     </TouchableHighlight>
 )
