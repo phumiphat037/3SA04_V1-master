@@ -43,5 +43,10 @@ const styles = StyleSheet.create({
     midium: {
         fontSize: 20,
         color: 'white',
-    }
+    },
+    mini: {
+        fontSize: 20,
+        color: 'black'
+    },
+
 });
