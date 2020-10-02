@@ -8,9 +8,9 @@ import { useNavigation } from '@react-navigation/native';
 const availableZipItems = [
     { place: 'Hatyai', code: '90110' },
     { place: 'Trang', code: '92000' },
-    { place: 'Chiangmai', code: '50000' },
-    { place: 'Khonkaen', code: '40000' },
-    { place: 'Chonburi', code: '20000' },
+    { place: 'Surat', code: '50000' },
+    { place: 'Trad', code: '40000' },
+    { place: 'krabi', code: '20000' },
 
 ]
 
@@ -20,11 +20,11 @@ const ZipItem =  ({ place, code, navigation }) => (
     <TouchableHighlight onPress={() => navigation.navigate('Weather', { zipCode: code })}>
     
         <View>
-        <View style={styles.box2}></View>
-           <Text style={styles.big}>{place}</Text>
-           <Text style={styles.small}>{code}</Text>
-           <View style={styles.box2}></View>
-        </View>
+       
+           <Text style={styles.big}>{place}                          {code}</Text>
+           
+           </View>
+        
     </TouchableHighlight>
     
 )
@@ -36,7 +36,7 @@ export default function ZipCodeScreen() {
     const navigation = useNavigation()
     return (
         <View> 
-            <ImageBackground source={require('../bg.jpg')} style={styles.backdrop}>
+            <ImageBackground source={require('../star.gif')} style={styles.backdrop}>
             <FlatList
                 data={availableZipItems}
                 keyExtractor={_keyExtractor}
@@ -70,16 +70,16 @@ const styles = StyleSheet.create({
     },
     big: {
         fontSize: 30,
-        color: 'black',
+        color: 'white',
         flexDirection: 'column',
-        
-
+        paddingBottom: 200,
     },
     small: {
         fontSize: 30,
         color: 'black',
         flexDirection: 'column',
         paddingLeft: 300,
+        paddingBottom: 100,
         
     },
     box2: {
